@@ -2,6 +2,8 @@
 
 This shopping cart system project refers to the take home coding assignment from BigCommerce
 
+-   [Live Demo](https://storefront-ethan-demo.netlify.app/)
+
 ### Built With
 
 -   React
@@ -34,5 +36,3 @@ npm test
 ### Contact
 
 Ethan Shi: y.ethan.shi@gmail.com
-
-Project Link:
