@@ -1,0 +1,50 @@
+// import font from Google fonts
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+/* Variables */
+$theme-color: lighten(black, 20%);
+
+.Category {
+    .category-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .category-header__info {
+        width: 45%;
+        height: 100%;
+        background-color: $theme-color;
+        border-left: 8px solid white;
+        border-right: 8px solid white;
+        text-align: center;
+
+        h2 {
+            color: white;
+            font-family: "Playfair Display", serif;
+            margin: 0;
+            margin-top: 70px;
+            // underline
+            text-decoration: none;
+            padding-bottom: 10px;
+            border-bottom: 1px solid white;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 10px 30px 0 30px;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        // border: 1px solid black;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 5vh;
+    }
+}

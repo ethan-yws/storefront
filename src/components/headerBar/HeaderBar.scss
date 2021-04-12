@@ -1,0 +1,73 @@
+/* --- Variables --- */
+$bottom-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+$header-font-size: 11px;
+$theme-color: lighten(black, 20%);
+
+/* --- Triangle down generator --- */
+@mixin triangle-down($size) {
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $theme-color;
+}
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: $bottom-shadow;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.store-logo {
+    margin-left: 10px;
+}
+
+.links-center {
+    display: flex;
+
+    p {
+        font-size: $header-font-size;
+        font-weight: 600;
+        padding-left: 30px;
+        color: $theme-color;
+    }
+
+    .dropdown-menu {
+        display: flex;
+        font-size: $header-font-size;
+    }
+
+    .triangle-down {
+        @include triangle-down(4px);
+        margin-top: 4px;
+        margin-left: 6px;
+    }
+}
+
+.my-cart-link {
+    white-space: nowrap; // avoid text wrap on small window size
+    display: inline-flex;
+    font-size: $header-font-size;
+    font-weight: 600;
+    margin-right: 20px;
+    color: $theme-color;
+
+    &__triangle-down {
+        @include triangle-down(4px);
+        margin-top: 5px;
+        margin-left: 6px;
+    }
+}
+
+.my-cart-dropdown {
+    cursor: pointer;
+
+    .my-cart-link-container:hover {
+        text-decoration: underline;
+    }
+}

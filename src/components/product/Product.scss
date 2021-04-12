@@ -1,0 +1,131 @@
+/* import font for price */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+
+.Product {
+    .product-path {
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        padding: 20px;
+
+        span {
+            color: grey;
+        }
+    }
+
+    .product-details {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 10vw;
+        margin-right: 10vw;
+
+        &__left {
+            flex: 0.6;
+            max-height: 500px;
+            widows: auto;
+            object-fit: contain;
+            margin-right: 30px;
+        }
+
+        &__right {
+            flex: 0.4;
+
+            .brand {
+                color: grey;
+                font-size: 11px;
+            }
+
+            .title {
+                font-size: 28px;
+                font-family: "Times New Roman", Times, serif;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: lighten(black, 20%);
+            }
+
+            .price {
+                color: grey;
+                font-family: "Cormorant Garamond", serif;
+                margin-top: 5px;
+                margin-bottom: 8px;
+            }
+
+            .description {
+                font-size: 11px;
+                color: grey;
+                text-align: justify;
+                line-height: 1.5;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .add-to-cart {
+                display: flex;
+                border-top: 1px solid lightgrey;
+                margin-top: 20px;
+                padding-top: 20px;
+                height: 50px;
+
+                &__left {
+                    flex: 0.3;
+                    display: flex;
+                    margin-left: 30px;
+
+                    .quantity {
+                        flex: 0.8;
+                        background-color: lighten(lightgrey, 10%);
+                        color: grey;
+                        font-size: 14px;
+                        width: 40px;
+                        height: auto;
+                        text-align: center;
+                        padding-top: 16px;
+                        border: 1px solid white;
+                    }
+
+                    .quantity-btns {
+                        flex: 0.2;
+                        display: flex;
+                        flex-direction: column;
+
+                        .quantity__dec {
+                            font-size: 16px;
+                        }
+
+                        button {
+                            margin-top: 3px;
+                            border: 1px solid white;
+                            outline: 0;
+                            color: grey;
+                            text-align: center;
+                            background-color: transparent !important;
+
+                            &:hover {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+
+                &__right {
+                    flex: 0.7;
+                    letter-spacing: 0.1em;
+                    margin-left: 10px;
+                    margin-right: 30px;
+                    background-color: black;
+                    color: white;
+                    font-size: 11px;
+                    font-weight: 600;
+                    border: none;
+                    outline: 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: lighten(black, 30%);
+                    }
+                }
+            }
+        }
+    }
+}

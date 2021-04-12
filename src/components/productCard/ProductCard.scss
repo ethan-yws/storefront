@@ -1,0 +1,77 @@
+/* import font for price */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+
+/* Variables */
+$product-text-size: 12px;
+$product-title-color: lighten(black, 20%);
+
+.product-card {
+    flex: 1 1 33.3333%;
+    position: relative;
+
+    &__image {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .product-brand {
+        color: grey;
+        font-size: $product-text-size;
+    }
+
+    .product-title {
+        font-size: $product-text-size;
+        text-transform: uppercase;
+        color: $product-title-color;
+        margin-bottom: 0;
+    }
+
+    .product-price {
+        color: grey;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+
+    /* Hide buttons by default */
+    .product-buttons {
+        display: none;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 32%;
+        left: 50%;
+
+        .view-details-btn,
+        .add-to-cart--btn {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-weight: 600;
+            border: none;
+            width: 160px;
+            margin-top: 20px;
+            cursor: pointer;
+            outline: 0;
+            letter-spacing: 0.1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:hover {
+                background-color: lighten(black, 30%);
+            }
+        }
+    }
+
+    /* Display buttons when hover */
+    &:hover {
+        .product-buttons {
+            display: block;
+        }
+
+        .product-card__image {
+            opacity: 0.25;
+        }
+    }
+}

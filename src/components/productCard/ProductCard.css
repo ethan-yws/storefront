@@ -1,0 +1,84 @@
+/* import font for price */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+/* Variables */
+.product-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.3333%;
+          flex: 1 1 33.3333%;
+  position: relative;
+  /* Hide buttons by default */
+  /* Display buttons when hover */
+}
+
+.product-card__image {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product-card .product-brand {
+  color: grey;
+  font-size: 12px;
+}
+
+.product-card .product-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+.product-card .product-price {
+  color: grey;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.product-card .product-buttons {
+  display: none;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 32%;
+  left: 50%;
+}
+
+.product-card .product-buttons .view-details-btn,
+.product-card .product-buttons .add-to-cart--btn {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: none;
+  width: 160px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: 0;
+  letter-spacing: 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-card .product-buttons .view-details-btn:hover,
+.product-card .product-buttons .add-to-cart--btn:hover {
+  background-color: #4d4d4d;
+}
+
+.product-card:hover .product-buttons {
+  display: block;
+}
+
+.product-card:hover .product-card__image {
+  opacity: 0.25;
+}
+/*# sourceMappingURL=ProductCard.css.map */

@@ -1,0 +1,84 @@
+/* --- Variables --- */
+/* --- Triangle down generator --- */
+.header-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.store-logo {
+  margin-left: 10px;
+}
+
+.links-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links-center p {
+  font-size: 11px;
+  font-weight: 600;
+  padding-left: 30px;
+  color: #333333;
+}
+
+.links-center .dropdown-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 11px;
+}
+
+.links-center .triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #333333;
+  margin-top: 4px;
+  margin-left: 6px;
+}
+
+.my-cart-link {
+  white-space: nowrap;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 20px;
+  color: #333333;
+}
+
+.my-cart-link__triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #333333;
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+.my-cart-dropdown {
+  cursor: pointer;
+}
+
+.my-cart-dropdown .my-cart-link-container:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=HeaderBar.css.map */
