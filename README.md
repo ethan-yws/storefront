@@ -1,4 +1,5 @@
 ## About
+React Shopping Cart System
 
 This shopping cart system project refers to the take home coding assignment from BigCommerce
 
