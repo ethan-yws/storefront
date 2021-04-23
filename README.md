@@ -1,8 +1,6 @@
 ## About
 React Shopping Cart System
 
-This shopping cart system project refers to the take home coding assignment from BigCommerce
-
 -   [Live Demo](https://storefront-ethan-demo.netlify.app/)
 
 ### Built With
